@@ -1,4 +1,4 @@
-FROM  ubuntu
+FROM ubuntu
 MAINTAINER Aliki Gregoriou
 
 ENV http_proxy http://192.168.101.52:8080
