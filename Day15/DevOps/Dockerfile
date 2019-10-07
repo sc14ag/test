@@ -10,6 +10,7 @@ ENV M2_HOME /root/apache-maven-3.6.1
 ENV PATH "$PATH:$JAVA_HOME/bin:$M2_HOME/bin"
 
 RUN apt-get update && apt-get install default-jdk git -y
+RUN apt-get install maven -y
 
 RUN git config --global http.sslVerify "false"
 COPY apache-maven-3.6.1-bin.tar.gz /root/apache-maven-3.6.1-bin.tar.gz
