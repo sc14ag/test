@@ -1,0 +1,10 @@
+package com.amdocs;
+
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features=".")
+public class TestRunner {
+
+
+
+}

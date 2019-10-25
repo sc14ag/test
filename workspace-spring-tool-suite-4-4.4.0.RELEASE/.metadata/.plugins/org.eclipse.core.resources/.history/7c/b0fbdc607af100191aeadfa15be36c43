@@ -1,0 +1,24 @@
+package com.amdocs;
+
+import java.awt.print.Book;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookCatalogueRestController {
+	
+	
+
+	private static List<Book> listOfBooks;
+
+	public BookCatalogueRestController() {
+		
+	}
+	
+	@GetMapping("/books")
+	public List<Book> getAllBooks(){
+		return listOfBooks;
+	}
+}

@@ -1,0 +1,70 @@
+package org.tektutor;
+
+
+import org.springframework.data.couchbase.core.mapping.Document;
+
+import com.couchbase.client.java.repository.annotation.Field;
+import com.couchbase.client.java.repository.annotation.Id;
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Data
+@NoArgsConstructor
+@Document
+public class Order {
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getShippingAddress() {
+		return shippingAddress;
+	}
+
+	public void setShippingAddress(String shippingAddress) {
+		this.shippingAddress = shippingAddress;
+	}
+
+	@Id
+	private int id;
+
+	@Field
+	private int customerId;
+	
+	@Field
+	private String name;
+	
+	@Field
+	private String shippingAddress;
+
+	public Order ( int id, int customerId, String name, String shippingAddress ) {
+		this.id = id;
+		this.customerId = customerId;
+		this.name = name;
+		this.shippingAddress = shippingAddress;
+	}	
+	
+	
+}

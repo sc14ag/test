@@ -1,0 +1,23 @@
+package com.amdocs;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		printArray(numbers);
+		
+
+	}
+
+	private static void printArray(ArrayList<Integer>numbers) {
+		
+		
+		int length = numbers.size();
+		
+		for (int index=0;index<length;index++)
+			System.out.println(numbers.get(index) + "\t");
+	}
+
+}

@@ -1,0 +1,39 @@
+package com.amdocs;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Steps {
+	
+	
+	@Given("The REST API is up and live")
+	public void ensureRESTAPIisUpAndLive(){
+	    // Write code here that turns the phrase above into concrete actions
+	    System.out.println("Step 1");
+		//throw new cucumber.api.PendingException();
+	}
+
+	@Given("the rest endpoint is: {string}")
+	public void acceptRESTEndPointURL(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+		 System.out.println("Step 1");
+	    //throw new cucumber.api.PendingException();
+	}
+
+	@When("I invoke the rest endpoint URL")
+	public void invokeRESTAPI() {
+	    // Write code here that turns the phrase above into concrete actions
+		 System.out.println("Step 1");
+	    //throw new cucumber.api.PendingException();
+	}
+
+	@Then("I expect the result as {string}")
+	public void verifyResult(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+		 System.out.println("Step 1");
+	    //throw new cucumber.api.PendingException();
+	}
+
+
+}

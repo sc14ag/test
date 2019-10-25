@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AlikiRevisionProjectMsApplicationTests" project="aliki-revision-project-ms" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.amdocs.AlikiRevisionProjectMsApplicationTests" time="0.209" displayname="AlikiRevisionProjectMsApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.amdocs.AlikiRevisionProjectMsApplicationTests]">
+    <testcase name="contextLoads" classname="com.amdocs.AlikiRevisionProjectMsApplicationTests" time="0.209" displayname="A special test case" uniqueid="[engine:junit-jupiter]/[class:com.amdocs.AlikiRevisionProjectMsApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

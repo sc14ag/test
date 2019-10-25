@@ -1,0 +1,23 @@
+package com.amdocs;
+
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int[] numbers = {10,20,30,40,50};
+		printArray(numbers);
+		
+	System.out.println(Arrays.toString(numbers));
+	}
+
+	private static void printArray(int[] numbers) {
+		
+		
+		int length = numbers.length;
+		
+		for (int index=0;index<length;index++)
+			System.out.println(numbers[index] + "\t");
+	}
+
+}

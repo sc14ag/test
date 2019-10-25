@@ -1,0 +1,6 @@
+package com.amdocs;
+
+@RestControler
+public class HelloRestController {
+
+}

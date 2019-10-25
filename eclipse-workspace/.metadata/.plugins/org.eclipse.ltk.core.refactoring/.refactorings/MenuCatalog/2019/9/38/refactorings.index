@@ -1,0 +1,3 @@
+1568826483204	Extract method 'displayMenu'
+1568826527411	Extract method 'getChoice'
+1568828085965	Extract method 'createMenuItem'

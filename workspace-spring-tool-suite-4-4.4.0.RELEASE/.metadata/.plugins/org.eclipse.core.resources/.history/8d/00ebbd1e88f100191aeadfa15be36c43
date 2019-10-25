@@ -1,0 +1,21 @@
+package com.amdocs;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
+@RestController
+public class BookStoreRestController {
+
+	private List<Book> listOfBooks;
+
+	@HystrixCommand(fallbackMethod="getLocalCalatalogue")
+	@GetMapping("/bookCatalogue")
+	public List<Book> getCatalogue(){
+		return listOfBooks;
+	}
+	
+}

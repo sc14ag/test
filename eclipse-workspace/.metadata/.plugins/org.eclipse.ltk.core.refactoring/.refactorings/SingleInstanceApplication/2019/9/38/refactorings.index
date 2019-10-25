@@ -1,0 +1,3 @@
+1568877634214	Extract method 'isAppRunning'
+1568878276164	Extract method 'updateAppRunningStatus'
+1568878650088	Extract method 'start'

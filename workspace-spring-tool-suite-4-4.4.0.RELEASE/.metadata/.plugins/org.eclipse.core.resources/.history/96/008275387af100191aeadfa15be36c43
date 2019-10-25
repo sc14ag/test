@@ -1,0 +1,16 @@
+package com.amdocs;
+
+@RestController
+public class BookCatalogueRestController {
+	
+	
+
+	public BookCatalogueRestController() {
+		
+	}
+	
+	@GetMapping("/books")
+	public List<Book> getAllBooks(){
+		return listOfBooks;
+	}
+}

@@ -1,0 +1,37 @@
+package com.amdocs;
+
+import org.springframework.web.client.RestTemplate;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Steps {
+	
+	private RestTemplate restTemplate;
+	private String restEndPointURL;
+	private String actualResponse, expectedResponse;
+	private int actualStatusCode, expectedActualCode;
+	
+	
+	@Given("The REST API is up and live")
+	public void ensureRESTAPIUpLive(){
+		restTemplate= new RestTemplate();
+		
+	   	}
+
+	@Given("the rest endpoint is: {string}")
+	public void acceptRESTEndPointURL(String stringRESTEndPointURL) {
+		restEndPointURL = stringRESTEndPointURL;
+	   }
+
+	@When("I invoke the rest endpoint URL")
+	public void invokeRESTAPI() {
+	   }
+
+	@Then("I expect the result as {string}")
+	public void verifyResult(String string) {
+	   }
+
+
+}

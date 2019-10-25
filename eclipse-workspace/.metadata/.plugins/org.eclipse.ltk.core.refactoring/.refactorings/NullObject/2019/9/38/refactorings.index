@@ -1,0 +1,5 @@
+1568718769681	Rename type 'BMW'
+1568720297993	Rename type 'NullObject'
+1568720701080	Extract method 'displayMenu'
+1568720750568	Extract method 'getChoice'
+1568720829525	Extract method 'createCar'

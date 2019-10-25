@@ -1,0 +1,16 @@
+package com.amdocs;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class AlikiRevisionProjectMsApplicationTests {
+
+
+	@Test
+	void contextLoads() {
+		ProductManager productManager = new ProductManager();
+		assertTrue("ArrayList<Product>", productManager.getAllProducts().getClass());
+	}
+
+}

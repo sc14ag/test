@@ -1,0 +1,25 @@
+package com.amdocs;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class RPNCalculatorRESTController {
+	@Autowired
+	private RPNCalculator rpnCalculator;
+	
+	@GetMapping("/rpncalculator/{rpnExpression}")
+	//@GetMapping (path = "/rpncalculator/{rpnExpression}",produces = MediaType.APPLICATION_JSON_VALUE)
+	//@GetMapping (path = "/rpncalculator/{rpnExpression}",produces = { "application/xml", "text/xml" })
+	//@ResponseBody
+	public double evaluate(@PathVariable("rpnExpression")String rpnMathExpression) {
+		return rpnCalculator.evaluate(rpnMathExpression);
+	}
+
+	
+	
+
+}

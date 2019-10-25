@@ -1,0 +1,20 @@
+package com.amdocs;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductManager {
+	@Autowired
+	private Product product;
+	
+	static {
+		product
+	}
+
+	
+	
+	public ListArray<Product> getAllProducts(){
+		
+	}
+}

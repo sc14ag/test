@@ -1,0 +1,65 @@
+package com.amdocs;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class Main {
+	
+	public static int getMax(int x, int y) {
+		 return x>y?x:y; //Ternary operator
+		 
+	}
+
+	public static void main(String[] args) {
+		//Traditional - old style
+		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		for (int index=1; index<6; ++index) {
+			numbers.add((index*10));
+		}
+		numbers.add(50);
+//		printArray(numbers);
+//		
+		//Functional Programming Style Lambda Function
+		numbers.forEach((value)-> System.out.println(value));
+		
+		numbers.forEach(value-> System.out.println(value));
+		
+
+		int max = getMax(10,20);
+		System.out.println("Max value is: "+max);
+		
+		System.out.println("Max value in an array: " +numbers.stream().max(Integer::compare).get());
+		
+		Addable ad1=(a,b)->(a+b);  
+		System.out.println(ad1.add(10,20));
+		
+		Stream<Integer>intStream= numbers.stream();
+		System.out.println("Count of numbers: "+intStream.count());
+		
+		//This will print only the unique numbers in the array list
+		intStream= numbers.stream();
+		intStream.distinct().forEach(value->System.out.println(value));
+		
+		//This will find the sum of all the numbers in the array list
+		Stream<Integer> stream3 = numbers.stream();
+		int max2 = stream3.reduce(0,(x, y) -> x + y);
+		int max3 = numbers.stream().reduce(0,(x,y)->x+y);
+		System.out.println("The total is:" +max2);
+		int arrray = numbers.stream().map(value->value+5);
+	
+	}
+	interface Addable{  
+	    int add(int a,int b);  
+	}  
+
+	private static void printArray(ArrayList<Integer>numbers) {
+		
+		
+		int length = numbers.size();
+		
+		for (int index=0;index<length;index++)
+			System.out.println(numbers.get(index) + "\t");
+	}
+
+}

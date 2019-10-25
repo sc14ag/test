@@ -1,0 +1,29 @@
+package com.amdocs;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookCatalogueRestController {
+	
+	
+
+	private static List<Book> listOfBooks;
+	
+	static {
+		
+		listOfBooks = new ArrayList<Book>();
+		listOfBooks.add(new Book("Clean Code","Rober Martin",10.00))
+	}
+
+	public BookCatalogueRestController() {
+		
+	}
+	
+	@GetMapping("/books")
+	public List<Book> getAllBooks(){
+		return listOfBooks;
+	}
+}

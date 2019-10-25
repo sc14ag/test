@@ -1,0 +1,30 @@
+package com.amdocs;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Traditional - old style
+//		ArrayList<Integer> numbers = new ArrayList<Integer>();
+////		for (int index=1; index<6; ++index) {
+////			numbers.add((index*10));
+////		}
+//		printArray(numbers);
+//		
+		//Functional Programming Style
+		numbers.forEach((value)-> System.out.println(value));
+		
+
+	}
+
+	private static void printArray(ArrayList<Integer>numbers) {
+		
+		
+		int length = numbers.size();
+		
+		for (int index=0;index<length;index++)
+			System.out.println(numbers.get(index) + "\t");
+	}
+
+}

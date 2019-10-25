@@ -1,0 +1,16 @@
+package com.amdocs;
+
+import java.util.ArrayList;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+@RestController
+public class RestAPIController {
+
+	
+@GetMapping("/products")
+public ArrayList<Product> getProducts(){
+	productManager.getProducts();
+}
+	
+}

@@ -1,0 +1,13 @@
+package com.amdocs;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+public interface IBookCatalogueProxy {
+	
+	@FeignClients("book-catalogue-ms")
+	public List<Book> getBookCatalogue(){
+	}
+
+}

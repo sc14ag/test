@@ -1,0 +1,13 @@
+package com.amdocs;
+
+
+@RestController
+public class RestController {
+
+	
+@GetMapping("/products")
+public ArrayList<Product> getProducts(){
+	productManager.getProducts();
+}
+	
+}

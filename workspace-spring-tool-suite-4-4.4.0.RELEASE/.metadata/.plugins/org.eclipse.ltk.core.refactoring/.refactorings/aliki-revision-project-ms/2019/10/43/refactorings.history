@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.amdocs.AlikiRevisionProjectMsApplication&apos; to &apos;Application&apos;&#x0A;- Original project: &apos;aliki-revision-project-ms&apos;&#x0A;- Original element: &apos;com.amdocs.AlikiRevisionProjectMsApplication&apos;&#x0A;- Renamed element: &apos;com.amdocs.Application&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AlikiRevisionProjectMsApplication&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.amdocs{AlikiRevisionProjectMsApplication.java[AlikiRevisionProjectMsApplication" matchStrategy="1" name="Application" qualified="false" references="true" similarDeclarations="false" stamp="1571552280300" textual="false" version="1.0"/>
+</session>

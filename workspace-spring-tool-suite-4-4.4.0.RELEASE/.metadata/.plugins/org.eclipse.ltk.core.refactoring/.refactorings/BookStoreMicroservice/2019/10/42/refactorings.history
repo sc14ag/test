@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.amdocs.BookStoreMicroserviceApplication&apos; to &apos;Application&apos;&#x0A;- Original project: &apos;BookStoreMicroservice&apos;&#x0A;- Original element: &apos;com.amdocs.BookStoreMicroserviceApplication&apos;&#x0A;- Renamed element: &apos;com.amdocs.Application&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BookStoreMicroserviceApplication&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.amdocs{BookStoreMicroserviceApplication.java[BookStoreMicroserviceApplication" matchStrategy="1" name="Application" qualified="false" references="true" similarDeclarations="false" stamp="1571321383460" textual="false" version="1.0"/>
+</session>

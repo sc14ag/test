@@ -1,0 +1,25 @@
+package com.amdocs;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookStoreRestController {
+	
+	private ArrayList<Book> bookCatalogue;
+	
+	public BookStoreRestController() {
+		bookCatalogue = new ArrayList<Book>;
+		
+	}
+	
+	@GetMapping("/bookcatalogue")
+	public ArrayList<Book> getBookCatalogue(){
+		return bookCatalogue;
+	}
+	
+
+}

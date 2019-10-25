@@ -9,7 +9,7 @@ public class AppTest{
 	public void testSayHello(){
 		App app = new App();
 		String actualResponse = app.sayHello();
-		String expectedResponse = "Hello Maven!!";
+		String expectedResponse = "Hello Maven";
 
 		assertEquals(expectedResponse,actualResponse);		
 	}
